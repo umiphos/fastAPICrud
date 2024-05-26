@@ -1,3 +1,49 @@
+# Instructions for Use
+
+## Local Run
+You can run this program locally using `local_app.py`. Before running it, you need to create a virtual environment. You can use `pipenv` or `venv`. The following steps use `venv`, which is a more general method and requires less configuration.
+
+1. Create a virtual environment:
+    ```sh
+    python3.10 -m venv scholar_control
+    ```
+
+2. Activate the virtual environment:
+    - On Unix or MacOS:
+      ```sh
+      source scholar_control/bin/activate
+      ```
+    - On Windows:
+      ```sh
+      scholar_control\Scripts\activate
+      ```
+
+3. Install the required packages:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+4. Run the application:
+    ```sh
+    python3.10 local_app.py
+    ```
+
+## Docker Run
+1. Build the Docker image:
+    ```sh
+    docker build -t fastapi-app .
+    ```
+
+2. Run the Docker container:
+    ```sh
+    docker run -d -p 8000:8000 fastapi-app
+    ```
+
+## How to Use
+
+Visit the following link to see the documentation: [API Docs](http://127.0.0.1:8000/api/v1/scholar_control/docs)
+```
+
 This is the requirement for the project
 
 E-Learning API
