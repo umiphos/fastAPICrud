@@ -2,6 +2,8 @@ from typing import List
 from fastapi import APIRouter, HTTPException, Depends, status
 from .models import Course
 from app.core.database import get_current_user_role
+from app.utils import calculate_lesson_score
+
 
 router = APIRouter()
 
